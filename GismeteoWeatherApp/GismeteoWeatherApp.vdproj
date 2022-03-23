@@ -15,12 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_2A19E1597811CD564395E174FF8266FA"
-        "OwnerKey" = "8:_C2D8FE52EDE24D9FBF408637B762A1BC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_6DF361F3A4724E01B9D1D42AC05ABAF6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -29,18 +23,6 @@
         {
         "MsmKey" = "8:_C2D8FE52EDE24D9FBF408637B762A1BC"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F458B5EE2448FAB8BE4122C75E250460"
-        "OwnerKey" = "8:_C2D8FE52EDE24D9FBF408637B762A1BC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C2D8FE52EDE24D9FBF408637B762A1BC"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -127,26 +109,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2A19E1597811CD564395E174FF8266FA"
-            {
-            "SourcePath" = "8:VCRUNTIME140D.dll"
-            "TargetName" = "8:VCRUNTIME140D.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_DA76BCA10C384EF1AC923FEACDD8BC2D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6DF361F3A4724E01B9D1D42AC05ABAF6"
             {
             "SourcePath" = "8:..\\..\\..\\..\\Downloads\\exe-symbol-of-executable-file-for-interface-of-rounded-rectangular-outlined-shape_icon-icons.com_57571.ico"
@@ -165,26 +127,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F458B5EE2448FAB8BE4122C75E250460"
-            {
-            "SourcePath" = "8:ucrtbased.dll"
-            "TargetName" = "8:ucrtbased.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_DA76BCA10C384EF1AC923FEACDD8BC2D"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }
@@ -255,7 +197,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GismeteoWeatherApp"
         "ProductCode" = "8:{54A4C593-0270-4A7F-A76A-8A8FDCBDCB76}"
-        "PackageCode" = "8:{0E954AC1-8414-40D1-A08C-575451103310}"
+        "PackageCode" = "8:{D48B04CA-A9B8-4162-9168-B32ADE669F47}"
         "UpgradeCode" = "8:{61A5D6EE-ADE6-4887-A6F8-75C7FD6DD921}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -377,7 +319,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0735000FD0A243919AA5A26D8DD226A6"
             {
-            "Name" = "8:GismeteoWeatherApp Installer"
+            "Name" = "8:GismeteoWeatherApp"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
@@ -391,7 +333,7 @@
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B7EFBFB2D7834208A809BFB11E9C2661"
             {
-            "Name" = "8:GismeteoWeatherApp Installer"
+            "Name" = "8:GismeteoWeatherApp"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
