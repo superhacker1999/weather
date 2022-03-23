@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include <String.h>
 
 namespace weather {
 
@@ -246,12 +245,24 @@ namespace weather {
 		 // скачиваем страницу с сайта
 		Regex^ temperature_value = gcnew Regex("now-weather\"><span class=\"unit unit_temperature_c\"><span class=\"sign\">(.*?)</span>(.*?)<span class=\"lower\">(.*?)</span>"); // Регулярное выражение, поиск значения температуры
 		Match^ match_temperature = temperature_value->Match(line); // Ищем совпадения по шаблону и записываем в группу температура
-		if (match_temperature->Groups[1]->Value->Contains("minus")) {
-			label2->Text = "-" + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
-		} else {
-			label2->Text = (match_temperature->Groups[1]->Value) + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
+		if (match_temperature->Groups[1]->Success) {
+			if (match_temperature->Groups[1]->Value->Contains("minus")) {
+				label2->Text = "-" + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
+			}
+			else {
+				label2->Text = (match_temperature->Groups[1]->Value) + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
+			}
 		}
-		
+		else {
+			temperature_value = gcnew Regex("now-weather\"><span class=\"unit unit_temperature_c\"><span class=\"sign\">(.*?)</span>(.*?)</span>");
+			match_temperature = temperature_value->Match(line);
+			if (match_temperature->Groups[1]->Value->Contains("minus")) {
+				label2->Text = "-" + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
+			}
+			else {
+				label2->Text = (match_temperature->Groups[1]->Value) + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
+			}
+		}
 		
 
 		Regex^ wind_value = gcnew Regex("unit unit_wind_m_s\">(.*?)<div");  //Регулярное выражение, поиск скорости ветра

@@ -140,6 +140,10 @@
   <ItemGroup>
     <ResourceCompile Include="weather.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ucrtbased.dll" />
+    <None Include="vcruntime140d.dll" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

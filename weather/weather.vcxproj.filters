@@ -32,4 +32,12 @@
       <Filter>Файлы ресурсов</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ucrtbased.dll">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+    <None Include="vcruntime140d.dll">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+  </ItemGroup>
 </Project>
