@@ -144,6 +144,9 @@
     <None Include="ucrtbased.dll" />
     <None Include="vcruntime140d.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\background1.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

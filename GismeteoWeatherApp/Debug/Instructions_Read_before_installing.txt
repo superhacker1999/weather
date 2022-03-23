@@ -1,3 +1,0 @@
-1. Run GismeteoWeatherApp Installer, instal the app.
-2. Copy ucrtbased.dll and vcruntime140d.dll to the path "C:\Windows\System32".
-3. Now you can run the GismeteoWeatherApp.
