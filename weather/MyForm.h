@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <String.h>
 
 namespace weather {
 
@@ -48,6 +49,7 @@ namespace weather {
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label10;
 	protected:
 
 	private:
@@ -63,7 +65,6 @@ namespace weather {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
@@ -75,74 +76,128 @@ namespace weather {
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
-			resources->ApplyResources(this->label1, L"label1");
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label1->Location = System::Drawing::Point(12, 73);
 			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(164, 24);
+			this->label1->TabIndex = 0;
+			this->label1->Text = L"Выберите город:";
 			// 
 			// comboBox1
 			// 
-			resources->ApplyResources(this->comboBox1, L"comboBox1");
+			this->comboBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(4) {
-				resources->GetString(L"comboBox1.Items"), resources->GetString(L"comboBox1.Items1"),
-					resources->GetString(L"comboBox1.Items2"), resources->GetString(L"comboBox1.Items3")
+			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(6) {
+				L"Набережные Челны", L"Казань", L"Москва", L"Гай",
+					L"Екатеринбург", L"Регенсбург"
 			});
+			this->comboBox1->Location = System::Drawing::Point(196, 65);
 			this->comboBox1->Name = L"comboBox1";
+			this->comboBox1->Size = System::Drawing::Size(208, 32);
+			this->comboBox1->TabIndex = 1;
+			this->comboBox1->Text = L"Набережные Челны";
 			// 
 			// button1
 			// 
-			resources->ApplyResources(this->button1, L"button1");
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->button1->Location = System::Drawing::Point(429, 59);
 			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(98, 38);
+			this->button1->TabIndex = 2;
+			this->button1->Text = L"Погода";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// label2
 			// 
-			resources->ApplyResources(this->label2, L"label2");
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label2->Location = System::Drawing::Point(192, 123);
 			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(307, 45);
+			this->label2->TabIndex = 3;
 			// 
 			// label3
 			// 
-			resources->ApplyResources(this->label3, L"label3");
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label3->Location = System::Drawing::Point(192, 168);
 			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(253, 45);
+			this->label3->TabIndex = 4;
 			// 
 			// label4
 			// 
-			resources->ApplyResources(this->label4, L"label4");
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label4->Location = System::Drawing::Point(192, 223);
 			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(253, 45);
+			this->label4->TabIndex = 5;
 			// 
 			// label5
 			// 
-			resources->ApplyResources(this->label5, L"label5");
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label5->Location = System::Drawing::Point(192, 278);
 			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(325, 29);
+			this->label5->TabIndex = 6;
 			// 
 			// label6
 			// 
-			resources->ApplyResources(this->label6, L"label6");
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label6->Location = System::Drawing::Point(12, 182);
 			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(116, 45);
+			this->label6->TabIndex = 7;
+			this->label6->Text = L"влажность:";
 			// 
 			// label7
 			// 
-			resources->ApplyResources(this->label7, L"label7");
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label7->Location = System::Drawing::Point(12, 137);
 			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(84, 45);
+			this->label7->TabIndex = 8;
+			this->label7->Text = L"погода:";
 			// 
 			// label8
 			// 
-			resources->ApplyResources(this->label8, L"label8");
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label8->Location = System::Drawing::Point(12, 233);
 			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(116, 45);
+			this->label8->TabIndex = 9;
+			this->label8->Text = L"давление:";
 			// 
 			// label9
 			// 
-			resources->ApplyResources(this->label9, L"label9");
+			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label9->Location = System::Drawing::Point(12, 278);
 			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(164, 29);
+			this->label9->TabIndex = 10;
+			this->label9->Text = L"скорость ветра:";
+			// 
+			// label10
+			// 
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F));
+			this->label10->ImeMode = System::Windows::Forms::ImeMode::NoControl;
+			this->label10->Location = System::Drawing::Point(12, 18);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(210, 24);
+			this->label10->TabIndex = 11;
+			this->label10->Text = L"Powered by Gismeteo";
 			// 
 			// MyForm
 			// 
-			resources->ApplyResources(this, L"$this");
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(560, 332);
+			this->Controls->Add(this->label10);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
@@ -155,7 +210,10 @@ namespace weather {
 			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->label1);
 			this->MaximizeBox = false;
+			this->MaximumSize = System::Drawing::Size(576, 371);
+			this->MinimumSize = System::Drawing::Size(576, 371);
 			this->Name = L"MyForm";
+			this->Text = L"Gismeteo Weather App";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -168,31 +226,51 @@ namespace weather {
 		String^ line;
 		WebClient^ wb = gcnew WebClient();
 		if (comboBox1->Text == "Набережные Челны") {
-			line = wb->DownloadString("https://yandex.ru/pogoda/naberezhnie-chelny?via=reg");
+			line = wb->DownloadString("https://www.gismeteo.ru/weather-naberezhnye-chelny-4534/now");
 		} 
 		else if (comboBox1->Text == "Казань") {
-			line = wb->DownloadString("https://yandex.ru/pogoda/kazan?via=reg");
+			line = wb->DownloadString("https://www.gismeteo.ru/weather-kazan-4364/now/");
 		}
 		else if (comboBox1->Text == "Москва") {
-			line = wb->DownloadString("https://yandex.ru/pogoda/moscow?via=reg");
+			line = wb->DownloadString("https://www.gismeteo.ru/weather-moscow-4368/now/");
 		}
 		else if (comboBox1->Text == "Гай") {
-			line = wb->DownloadString("https://yandex.ru/pogoda/11087?via=srp");
+			line = wb->DownloadString("https://www.gismeteo.ru/weather-gay-11300/now/");
+		}
+		else if (comboBox1->Text == "Екатеринбург") {
+			line = wb->DownloadString("https://www.gismeteo.ru/weather-yekaterinburg-4517/now/");
+		}
+		else if (comboBox1->Text == "Регенсбург") {
+			line = wb->DownloadString("https://www.gismeteo.ru/weather-regensburg-2708/now/");
 		}
 		 // скачиваем страницу с сайта
-		Regex^ temperature_value = gcnew Regex("</span><span class=\"temp__value temp__value_with-unit\">(.*?)</span>"); // Регулярное выражение, поиск значения температуры
+		Regex^ temperature_value = gcnew Regex("now-weather\"><span class=\"unit unit_temperature_c\"><span class=\"sign\">(.*?)</span>(.*?)<span class=\"lower\">(.*?)</span>"); // Регулярное выражение, поиск значения температуры
 		Match^ match_temperature = temperature_value->Match(line); // Ищем совпадения по шаблону и записываем в группу температура
-		label2->Text = (match_temperature->Groups[1]->Value) + " °C";
+		if (match_temperature->Groups[1]->Value->Contains("minus")) {
+			label2->Text = "-" + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
+		} else {
+			label2->Text = (match_temperature->Groups[1]->Value) + (match_temperature->Groups[2]->Value) + (match_temperature->Groups[3]->Value) + " °C";
+		}
+		
+		
 
-		Regex^ wind_value = gcnew Regex("</i><span class=\"wind-speed\">(.*?)</span> <span class=\"fact__unit\">(.*?), <abbr class=\" icon-abbr\" title=\"(.*?)\" aria-label");  //Регулярное выражение, поиск скорости ветра
+		Regex^ wind_value = gcnew Regex("unit unit_wind_m_s\">(.*?)<div");  //Регулярное выражение, поиск скорости ветра
 		Match^ match_wind = wind_value->Match(line);
-		label5->Text = match_wind->Groups[1]->Value + " м/с";
-
-		Regex^ humidity_value = gcnew Regex("fact__humidity\"><div class=\"term__label\"></div><div class=\"term__value\" aria-label=\"(.*?): (.*?)\"");  //Регулярное выражение, поиск значений влажности
+		if (match_wind->Groups[1]->Value->Contains("0")) {
+			label5->Text = match_wind->Groups[1]->Value + " м/с штиль";
+		}
+		else {
+			label5->Text = match_wind->Groups[1]->Value + " м/с";
+		}
+		
+		Regex^ humidity_value = gcnew Regex("humidity\"><div class=\"item-title\">(.*?)</div><div class=\"item-value\">(.*?)</div>");  //Регулярное выражение, поиск значения влажности
 		Match^ match_humidity = humidity_value->Match(line);
-		label3->Text = match_humidity->Groups[2]->Value;
+		label3->Text = match_humidity->Groups[2]->Value + " %";
 
-
+		Regex^ pressure_value = gcnew Regex("item-value\"><div class=\"unit unit_pressure_mm_hg_atm\">(.*?)<div");  //Регулярное выражение, поиск значения давления
+		Match^ match_pressure = pressure_value->Match(line);
+		label4->Text = match_pressure->Groups[1]->Value + " мм рт.ст.";
+		
 	}
 };
 }

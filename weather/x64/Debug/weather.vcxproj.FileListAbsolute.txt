@@ -1,5 +1,6 @@
 C:\Users\kiryx\source\repos\weather\weather\x64\Debug\weather.vcxproj.AssemblyReference.cache
 C:\Users\kiryx\source\repos\weather\weather\x64\Debug\weather.vcxproj.SuggestedBindingRedirects.cache
 C:\Users\kiryx\source\repos\weather\weather\x64\Debug\weather.MyForm.resources
-C:\Users\kiryx\source\repos\weather\weather\x64\Debug\weather.vcxproj.GenerateResource.cache
+C:\Users\kiryx\source\repos\weather\weather\x64\Debug\weather.MyForm.en-US.resources
 C:\Users\kiryx\source\repos\weather\weather\x64\Debug\weather.MyForm.ru.resources
+C:\Users\kiryx\source\repos\weather\weather\x64\Debug\weather.vcxproj.GenerateResource.cache

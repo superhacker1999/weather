@@ -8,6 +8,9 @@
   <ContentFiles />
   <SatelliteDlls>
     <SatelliteDll>
+      <FullPath>C:\Users\kiryx\source\repos\weather\weather\x64\Debug\en-US\weather.resources.dll</FullPath>
+    </SatelliteDll>
+    <SatelliteDll>
       <FullPath>C:\Users\kiryx\source\repos\weather\weather\x64\Debug\ru\weather.resources.dll</FullPath>
     </SatelliteDll>
   </SatelliteDlls>
